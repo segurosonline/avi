@@ -1,4 +1,7 @@
-// api/send-telegram.js
+res.setHeader('Access-Control-Allow-Origin', 'https://tiketestmaster.site');
+res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Método no permitido' });
