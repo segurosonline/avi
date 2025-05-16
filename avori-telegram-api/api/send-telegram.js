@@ -42,3 +42,6 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'Error al enviar mensaje' });
   }
 }
+if (req.method === 'OPTIONS') {
+  return res.status(204).end();
+}
