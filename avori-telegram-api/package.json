@@ -1,8 +1,0 @@
-{
-  "name": "avori-telegram-api",
-  "version": "1.0.0",
-  "main": "api/send-telegram.js",
-  "dependencies": {
-    "node-fetch": "^3.0.0"
-  }
-}
